@@ -1,0 +1,5 @@
+SYNTHETIC DATASET | chronological holdout: 2025-07-01 to 2025-12-31
+MAE: 19,090.47
+RMSE: 24,023.97
+MAPE: 84.28%
+Note: holdout predictions use actual lagged sales (one-step-ahead evaluation); 30-day forecast uses recursive predictions and will accumulate error.

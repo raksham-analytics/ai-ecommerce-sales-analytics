@@ -1,0 +1,9 @@
+Power BI Desktop: Get Data > Text/CSV > data/orders_synthetic.csv; set order_date to Date, other numeric columns to decimal/whole as appropriate. Rename table to Orders.
+Total Sales = SUM(Orders[sales])
+Total Profit = SUM(Orders[profit])
+Total Orders = DISTINCTCOUNT(Orders[order_id])
+Profit Margin % = DIVIDE([Total Profit], [Total Sales], 0)
+Average Order Value = DIVIDE([Total Sales], [Total Orders], 0)
+Total Customers = DISTINCTCOUNT(Orders[customer_id])
+Visuals: Cards for KPIs; line chart order_date vs Total Sales (monthly); bars category vs Total Sales; map or bars region vs Total Sales; slicers category/region/date.
+Import data/forecast_30_days.csv as a separate Forecast table and add line chart of date vs forecast_sales. Forecast values are illustrative.
